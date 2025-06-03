@@ -4,8 +4,8 @@ import { authOptions } from "@/lib/auth";
 import Link from "next/link";
 
 export default async function HomePage() {
-  // const session = await getServerSession(authOptions);
-  const session = null; // simulate not logged
+  const session = await getServerSession(authOptions);
+  //const session = null; // simulate not logged
 
 
   return (
